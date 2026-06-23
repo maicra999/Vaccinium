@@ -1,6 +1,7 @@
 package cc.maicra999.vaccinium.event;
 
 import cc.maicra999.vaccinium.Vaccinium;
+import cc.maicra999.vaccinium.event.impl.InventoryEventListener;
 import cc.maicra999.vaccinium.event.impl.WorldEventListener;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +11,7 @@ public class EventListenerRegistry {
     private final List<EventListener> listeners = new ArrayList<>();
 
     public EventListenerRegistry(Vaccinium vaccinium) {
+        add(new InventoryEventListener(vaccinium));
         add(new WorldEventListener(vaccinium));
     }
 
