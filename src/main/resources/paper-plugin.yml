@@ -1,0 +1,7 @@
+name: ${name}
+version: ${version}
+description: ${description}
+authors: [ ${authors} ]
+main: cc.maicra999.vaccinium.Vaccinium
+load: STARTUP
+api-version: "26.1"

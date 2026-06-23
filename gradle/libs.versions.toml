@@ -1,0 +1,14 @@
+[versions]
+spotless = "8.2.1"
+shadow = "9.3.1"
+paperweight-userdev = "2.0.0-beta.21"
+paper = "26.2.build.+"
+configurate-yaml = "4.1.2"
+
+[libraries]
+configurate-yaml = { group = "org.spongepowered", name = "configurate-yaml", version.ref = "configurate-yaml" }
+
+[plugins]
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
+paperweight-userdev = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight-userdev" }
